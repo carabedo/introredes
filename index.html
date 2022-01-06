@@ -14096,45 +14096,14 @@ div.jp-OutputPrompt {
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
 <div class="reveal">
-<div class="slides"><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[109]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
-<span class="n">Video</span><span class="p">(</span><span class="s2">&quot;video.mp4&quot;</span><span class="p">)</span>
-</pre></div>
+<div class="slides"><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="deep-learning:">deep learning:<a class="anchor-link" href="#deep-learning:">&#182;</a></h1><p><img src="video.gif" alt=""></p>
 
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[109]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<video src="video.mp4" controls  >
-      Your browser does not support the <code>video</code> element.
-    </video>
-</div>
+<pre><code>                                                                                - vqgan+clip</code></pre>
 
 </div>
-
-</div>
-
-</div>
-
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14716,9 +14685,9 @@ Target=1, Prediccion=1
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div class="highlight"><pre><span></span><span class="o">...</span><span class="n">Theoretical</span> <span class="n">results</span> <span class="n">strongly</span> <span class="n">suggest</span> <span class="n">that</span> <span class="ow">in</span> <span class="n">order</span> <span class="n">to</span> <span class="n">learn</span> <span class="n">the</span> <span class="n">kind</span> <span class="n">of</span> <span class="n">complicated</span> <span class="n">functions</span> <span class="n">that</span> <span class="n">can</span> <span class="n">represent</span> <span class="n">high</span><span class="o">-</span><span class="n">level</span> <span class="n">abstractions</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="ow">in</span> <span class="n">vision</span><span class="p">,</span> <span class="n">language</span><span class="p">,</span> <span class="ow">and</span> <span class="n">other</span> <span class="n">AI</span><span class="o">-</span><span class="n">level</span> <span class="n">tasks</span><span class="p">),</span> <span class="n">one</span> <span class="n">needs</span> <span class="n">deep</span> <span class="n">architectures</span><span class="o">.</span> <span class="n">Deep</span> <span class="n">architectures</span> <span class="n">are</span> <span class="n">composed</span> <span class="n">of</span> <span class="n">multiple</span> <span class="n">levels</span> <span class="n">of</span> <span class="n">non</span><span class="o">-</span><span class="n">linear</span> <span class="n">operations</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="ow">in</span> <span class="n">neural</span> <span class="n">nets</span>
-<span class="k">with</span> <span class="n">many</span> <span class="n">hidden</span> <span class="n">layers</span><span class="o">...</span>
-</pre></div>
+
+<pre><code>...Theoretical results strongly suggest that in order to learn the kind of complicated functions that can represent high-level abstractions (e.g. in vision, language, and other AI-level tasks), one needs deep architectures. Deep architectures are composed of multiple levels of non-linear operations, such as in neural nets
+with many hidden layers...</code></pre>
 
 <pre><code>                                    - Yoshua Bengio (2009), "Learning Deep Architectures for AI"</code></pre>
 
@@ -14774,7 +14743,9 @@ Target=1, Prediccion=1
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Como-encuentro-los-betas?">Como encuentro los betas?<a class="anchor-link" href="#Como-encuentro-los-betas?">&#182;</a></h1><p>Como siempre...minimizo la funcion de costo. Si quiero entrenar mi red para clasificar perro/gato uso las mismas metricas de la toda la vida para ajustar los betas de la ultima capa que decide si es perro o gato. Derivo la funcion de costo... funcion que depende de los betas de la ultima capa, la anterior, la antepenultima y asi...</p>
-<h2 id="Backpropagation">Backpropagation<a class="anchor-link" href="#Backpropagation">&#182;</a></h2><p><img src="7.png" alt=""></p>
+<h2 id="Backpropagation-es-solo-la-regla-de-la-cadena*">Backpropagation es solo la regla de la cadena*<a class="anchor-link" href="#Backpropagation-es-solo-la-regla-de-la-cadena*">&#182;</a></h2><p><img src="7.png" alt=""></p>
+<p><a href="https://theorydish.blog/2021/12/16/backpropagation-≠-chain-rule/">facil</a>
+<a href="https://timvieira.github.io/blog/post/2017/08/18/backprop-is-not-just-the-chain-rule/">dificil</a></p>
 
 </div>
 </div></section></section><section><section>
@@ -14789,13 +14760,18 @@ Target=1, Prediccion=1
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Optimizadores">Optimizadores<a class="anchor-link" href="#Optimizadores">&#182;</a></h1><p>Como vimos en el curso para buscar el minimo de la funcion de costo no derivamos, iteramos (epochs) con pasitos cortos (learning rate) en la direccion de mayor pendiente en busqueda del minimo.</p>
-<h3 id="Adaptative-Learning-Rates">Adaptative Learning Rates<a class="anchor-link" href="#Adaptative-Learning-Rates">&#182;</a></h3><h3 id="Batched-Stochastic-Gradient-Descent">Batched Stochastic Gradient Descent<a class="anchor-link" href="#Batched-Stochastic-Gradient-Descent">&#182;</a></h3>
+<h3 id="Adaptative-Learning-Rates">Adaptative Learning Rates<a class="anchor-link" href="#Adaptative-Learning-Rates">&#182;</a></h3><p>Algoritmos que van regulando el learning rate para optimizar la busqueda.</p>
+<h3 id="Batched-Stochastic-Gradient-Descent">Batched Stochastic Gradient Descent<a class="anchor-link" href="#Batched-Stochastic-Gradient-Descent">&#182;</a></h3><p>SGD de siempre calculado en pedazos (batches) random del training set.</p>
+
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Regularizacion">Regularizacion<a class="anchor-link" href="#Regularizacion">&#182;</a></h1><h2 id="Dropout">Dropout<a class="anchor-link" href="#Dropout">&#182;</a></h2><p>De manera aleatoria matamos neuronas con una birrita en cada iteracion, obligamos a que todas las neuronas aprendan. Esto hace que la red sea robusta y que pueda generalizar.</p>
+<h1 id="Regularizacion-(evitando-el-overfitting)">Regularizacion (evitando el overfitting)<a class="anchor-link" href="#Regularizacion-(evitando-el-overfitting)">&#182;</a></h1><h2 id="Data-augmentation">Data augmentation<a class="anchor-link" href="#Data-augmentation">&#182;</a></h2><p>Se perturban los datos para evitar el overfiting (la misma foto del perrito, rotada, flipeada, cropeada, etc)</p>
+<h2 id="Dropout">Dropout<a class="anchor-link" href="#Dropout">&#182;</a></h2><p>De manera aleatoria matamos neuronas con una birrita en cada iteracion, obligamos a que todas las neuronas aprendan. Esto hace que la red sea robusta y que pueda generalizar.</p>
 <h2 id="Early-Stopping">Early Stopping<a class="anchor-link" href="#Early-Stopping">&#182;</a></h2><p>Dejamos de iterar cuando en un set de cross validation empezamos a performar mal.</p>
+<p><a href="https://blog.ml.cmu.edu/2020/08/31/4-overfitting/">https://blog.ml.cmu.edu/2020/08/31/4-overfitting/</a></p>
+<p><a href="https://www.youtube.com/watch?v=Kih-VPHL3gA">https://www.youtube.com/watch?v=Kih-VPHL3gA</a></p>
 
 </div>
 </div></section></section><section><section>
@@ -15663,7 +15639,7 @@ prediction -&gt;  9
 <h1 id="Donde-si-usar-deep-learning:">Donde si usar deep learning:<a class="anchor-link" href="#Donde-si-usar-deep-learning:">&#182;</a></h1><p><img src="https://cdn-images-1.medium.com/max/1600/0*GTzatEUd4cICPVub." alt=""></p>
 <ul>
 <li>nlp</li>
-<li>cv</li>
+<li>cv (img+video)</li>
 <li>audio</li>
 <li>reinforcement learning (rl)</li>
 <li>generative learning</li>
@@ -15718,6 +15694,8 @@ prediction -&gt;  9
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="nlp">nlp<a class="anchor-link" href="#nlp">&#182;</a></h1><p><img src="https://pythondiario.com/wp-content/uploads/2021/08/1_copilot.gif" alt=""></p>
+<p><a href="https://arxiv.org/abs/1706.03762">Transformers! Attention Is All You Need</a></p>
+<p><a href="https://jalammar.github.io/illustrated-gpt2/">GPT-2 ilustrado</a></p>
 <p><a href="http://nlpprogress.com/">http://nlpprogress.com/</a></p>
 <p><a href="https://huggingface.co/models">https://huggingface.co/models</a></p>
 
@@ -15733,7 +15711,28 @@ prediction -&gt;  9
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="superesolucion">superesolucion<a class="anchor-link" href="#superesolucion">&#182;</a></h2><p><img src="https://github.com/thunil/TecoGAN/raw/master/resources/tecoGAN-spider.gif" alt=""></p>
+<p><code>input: 'deep learning'</code></p>
+<p><img src="video.gif" alt=""></p>
+
+<pre><code>                                                                                ~vqgan+clip
+
+</code></pre>
+<p><a href="https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN%2BCLIP_%28z%2Bquantize_method_with_augmentations%2C_user_friendly_interface%29.ipynb">https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN%2BCLIP_%28z%2Bquantize_method_with_augmentations%2C_user_friendly_interface%29.ipynb</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>input: a clown in a bicycle getting hit by a truck on a stormy night</code></p>
+<p><img src="10.png" alt=""></p>
+
+<pre><code>                                                                                ~vqgan+clip</code></pre>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="superesolucion-y-superfluidez">superesolucion y superfluidez<a class="anchor-link" href="#superesolucion-y-superfluidez">&#182;</a></h2><p><img src="https://github.com/thunil/TecoGAN/raw/master/resources/tecoGAN-spider.gif" alt=""></p>
 <p><a href="https://www.youtube.com/watch?v=Fxd8XJ_J0Gc">https://www.youtube.com/watch?v=Fxd8XJ_J0Gc</a></p>
 
 </div>
@@ -15747,14 +15746,6 @@ prediction -&gt;  9
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="rl">rl<a class="anchor-link" href="#rl">&#182;</a></h1><p><img src="https://i.imgur.com/kdYU907.gif" alt="">
-<a href="https://www.youtube.com/watch?v=hx_bgoTF7bs">https://www.youtube.com/watch?v=hx_bgoTF7bs</a></p>
-<p><a href="https://www.youtube.com/watch?v=jjfDO2pWpys&amp;t=378s">https://www.youtube.com/watch?v=jjfDO2pWpys&amp;t=378s</a></p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="audio">audio<a class="anchor-link" href="#audio">&#182;</a></h1><p><a href="https://openai.com/blog/jukebox/">https://openai.com/blog/jukebox/</a></p>
 <p><a href="https://fakeyou.com">https://fakeyou.com</a>
 <a href="https://fakeyou.com/tts/result/TR:aykxb3fa2vcgnr13mnyfy5ksjgcag">https://fakeyou.com/tts/result/TR:aykxb3fa2vcgnr13mnyfy5ksjgcag</a></p>
@@ -15762,6 +15753,32 @@ prediction -&gt;  9
 <p><a href="https://www.youtube.com/watch?v=0sR1rU3gLzQ">https://www.youtube.com/watch?v=0sR1rU3gLzQ</a></p>
 <p><a href="https://app.resemble.ai/voices">https://app.resemble.ai/voices</a></p>
 <p><a href="https://www.lalal.ai">https://www.lalal.ai</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="reinforcement-learning">reinforcement learning<a class="anchor-link" href="#reinforcement-learning">&#182;</a></h1><p><img src="https://www.mathworks.com/discovery/reinforcement-learning/_jcr_content/mainParsys3/discoverysubsection/mainParsys/image.adapt.full.medium.png/1615456679034.png" alt=""></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="https://www.researchgate.net/profile/Akos-Kungl-2/publication/342097480/figure/fig4/AS:901194046271488@1591872812012/Problem-setup-in-reinforcement-learning-A-The-two-main-components-of-reinforcement.png" alt=""></p>
+<p><a href="https://colab.research.google.com/drive/1YZY9HdB9BkCtJQ4Xm6w4Uxmd-HLOEUJq">colab</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="https://i.imgur.com/kdYU907.gif" alt=""></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://www.youtube.com/watch?v=hx_bgoTF7bs">https://www.youtube.com/watch?v=hx_bgoTF7bs</a></p>
+<p><a href="https://www.youtube.com/watch?v=jjfDO2pWpys&amp;t=378s">https://www.youtube.com/watch?v=jjfDO2pWpys&amp;t=378s</a></p>
 
 </div>
 </div></section></section>
