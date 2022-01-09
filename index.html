@@ -14687,8 +14687,13 @@ Target=1, Prediccion=1
 </ul>
 </li>
 </ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div>
-<img src="2.png" width="350"/>
+<img src="2.png" width="400"/>
 </div>
 </div>
 </div></section></section><section><section>
@@ -14762,7 +14767,7 @@ with many hidden layers...</code></pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Pero una red neuronal tiene una forma analitica cerrada que podemos derivar?</p>
 <p>Veamos que pinta tiene una funcion de costo:</p>
-<p><img src="6.png" alt=""></p>
+<p><img src="6.png" width="500"/></p>
 
 </div>
 </div></section></section><section><section>
@@ -14788,9 +14793,13 @@ with many hidden layers...</code></pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Redes-Multicapa">Redes Multicapa<a class="anchor-link" href="#Redes-Multicapa">&#182;</a></h1><p>Veamos un ejemplo de como construir una red neuronal para el dataset de los digitos escritos a mano:</p>
 <p><img src="https://camo.githubusercontent.com/e72b6f47eb9d50f9c444e38e5eba02d3f630996554bf4df767bd01b62032fad7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313339312f312a37486d534a4f41425463527a574d564f4233664a6c412e706e67" alt=""></p>
-<ul>
-<li>El objetivo es una funcion (red neuronal) que tome como input la imagen de un numero (por ejemplo el 8) y su output un vector de 10 dimensiones con las probabilidades de pertenencia a cada clase. En este caso esperamos que la clase que prediga con mayor probabilidad sea el 8.</li>
-</ul>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>El objetivo es una funcion (red neuronal) que tome como input la imagen de un numero (por ejemplo el 8) y su output un vector de 10 dimensiones con las probabilidades de pertenencia a cada clase.</p>
+<p><img src="https://user-images.githubusercontent.com/68801296/88917938-4008f180-d286-11ea-8667-50027700e3ea.png" width="400"/></p>
 
 </div>
 </div></section></section><section><section>
@@ -15386,12 +15395,12 @@ acc-&gt;  0.8291000127792358
 
 </div>
 
-</div></div><div class="fragment">
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Miremos-una-sola-prediccion:">Miremos una sola prediccion:<a class="anchor-link" href="#Miremos-una-sola-prediccion:">&#182;</a></h2>
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
@@ -15652,13 +15661,129 @@ prediction -&gt;  9
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
-<pre><code>        + nlp 
-        + cv (img+video) 
+<pre><code>        + cv (img+video) 
+        + generative learning
+        + nlp 
         + audio
-        + reinforcement learning (rl)
-        + generative learning</code></pre>
+        + reinforcement learning (rl)</code></pre>
 
 </div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="cv">cv<a class="anchor-link" href="#cv">&#182;</a></h1>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Image-Classification:">Image Classification:<a class="anchor-link" href="#Image-Classification:">&#182;</a></h3><p><img  src="https://github.com/dmlc/gluon-cv/raw/master/docs/_static/image-classification.png" alt="classification" width="400"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Object-Detection:">Object Detection:<a class="anchor-link" href="#Object-Detection:">&#182;</a></h3><p>detect multiple objects with their bounding boxes in an image.</p>
+<p><img src="https://github.com/dmlc/gluon-cv/raw/master/docs/_static/object-detection.png" alt="detection" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="https://pythonawesome.com/content/images/2021/07/track_all.gif" alt="detection" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Semantic-Segmentation:">Semantic Segmentation:<a class="anchor-link" href="#Semantic-Segmentation:">&#182;</a></h3><p>associate each pixel of an image  with a categorical label.</p>
+<p><img src="https://github.com/dmlc/gluon-cv/raw/master/docs/_static/semantic-segmentation.png" alt="instance" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Instance-Segmentation:">Instance Segmentation:<a class="anchor-link" href="#Instance-Segmentation:">&#182;</a></h3><p>detect objects and associate  each pixel inside object area with an instance label.</p>
+<p><img src="https://github.com/dmlc/gluon-cv/raw/master/docs/_static/instance-segmentation.png" alt="instance" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Pose-Estimation:">Pose Estimation:<a class="anchor-link" href="#Pose-Estimation:">&#182;</a></h3><p>detect human pose from images.</p>
+<p><img src="https://beyondminds.ai/wp-content/uploads/2020/07/1_Q8sk8FwMIYuLoLmptsT-MA.png" width='500'/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Video-Action-Recognition:">Video Action Recognition:<a class="anchor-link" href="#Video-Action-Recognition:">&#182;</a></h3><p>recognize human actions in a video.</p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu5NNTdHkfoc0IcxQ8jxlxc_Dzp_Fh49lG0pPx3yz-jBvDTs55vShVZZi8bg__8xjZYWo&usqp=CAU" alt="action_recognition" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Depth-Prediction:">Depth Prediction:<a class="anchor-link" href="#Depth-Prediction:">&#182;</a></h3><p>predict depth map from images.</p>
+<p><img src="https://github.com/dmlc/gluon-cv/raw/master/docs/_static/depth.png" alt="depth" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Person-Re-ID:">Person Re-ID:<a class="anchor-link" href="#Person-Re-ID:">&#182;</a></h2><p>re-identify pedestrians across scenes</p>
+<p><img  src="https://user-images.githubusercontent.com/3307514/46702937-f4311800-cbd9-11e8-8eeb-c945ec5643fb.png" alt="re-id" width="500"/></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Superesolution-y-superfluidez">Superesolution y superfluidez<a class="anchor-link" href="#Superesolution-y-superfluidez">&#182;</a></h3><p><img  src="https://github.com/thunil/TecoGAN/raw/master/resources/tecoGAN-spider.gif" alt="re-id" width="500"/></p>
+
+</div>
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;Fxd8XJ_J0Gc&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">405</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+        <iframe
+            width="720"
+            height="405"
+            src="https://www.youtube.com/embed/Fxd8XJ_J0Gc"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15687,38 +15812,125 @@ prediction -&gt;  9
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="GANs">GANs<a class="anchor-link" href="#GANs">&#182;</a></h2><p><img src="https://www.notion.so/image/https%3A%2F%2Fmiro.medium.com%2Fmax%2F900%2F1*TKr1dtcNgJCA8uYY1OhmSg.png?table=block&amp;id=b9eebb0f-5bd3-4b1e-aeb4-608e7a62087d&amp;spaceId=84b18300-e319-4c7a-8169-90443709290a&amp;width=2000&amp;userId=&amp;cache=v2" alt=""></p>
+<h2 id="GANs">GANs<a class="anchor-link" href="#GANs">&#182;</a></h2><p><img src="https://www.notion.so/image/https%3A%2F%2Fmiro.medium.com%2Fmax%2F900%2F1*TKr1dtcNgJCA8uYY1OhmSg.png?table=block&id=b9eebb0f-5bd3-4b1e-aeb4-608e7a62087d&spaceId=84b18300-e319-4c7a-8169-90443709290a&width=2000&userId=&cache=v2" width="600" /></p>
 
 </div>
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;cQ54GDm1eL0&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">405</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+        <iframe
+            width="720"
+            height="405"
+            src="https://www.youtube.com/embed/cQ54GDm1eL0"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="deepfakes">deepfakes<a class="anchor-link" href="#deepfakes">&#182;</a></h2><p><a href="https://youtu.be/HG_NZpkttXE?t=99">https://youtu.be/HG_NZpkttXE?t=99</a></p>
-<p><a href="https://www.youtube.com/watch?v=iyiOVUbsPcM">https://www.youtube.com/watch?v=iyiOVUbsPcM</a></p>
+<h2 id="deepfakes">deepfakes<a class="anchor-link" href="#deepfakes">&#182;</a></h2><p><img src="https://www.researchgate.net/profile/Ali-Javed/publication/349703826/figure/fig2/AS:996746314412033@1614654248932/Creation-of-a-Deepfake-using-an-auto-encoder-and-decoder-The-same-encoder-decoder-pair.png" width="500" /></p>
 
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="https://www.researchgate.net/profile/Ali-Javed/publication/349703826/figure/fig2/AS:996746314412033@1614654248932/Creation-of-a-Deepfake-using-an-auto-encoder-and-decoder-The-same-encoder-decoder-pair.png" alt=""></p>
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;HG_NZpkttXE?t=99&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">405</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+        <iframe
+            width="720"
+            height="405"
+            src="https://www.youtube.com/embed/HG_NZpkttXE?t=99"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
 
 </div>
+
+</div>
+
+</div>
+
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="nlp">nlp<a class="anchor-link" href="#nlp">&#182;</a></h1><p><img src="https://pythondiario.com/wp-content/uploads/2021/08/1_copilot.gif" alt=""></p>
-<p><a href="https://arxiv.org/abs/1706.03762">Transformers! Attention Is All You Need</a></p>
-<p><a href="https://jalammar.github.io/illustrated-gpt2/">GPT-2 ilustrado</a></p>
-<p><a href="http://nlpprogress.com/">http://nlpprogress.com/</a></p>
-<p><a href="https://huggingface.co/models">https://huggingface.co/models</a></p>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="img+nlp">img+nlp<a class="anchor-link" href="#img+nlp">&#182;</a></h1><p><img src="8.png" alt=""></p>
-<p><a href="https://openai.com/blog/image-gpt/">https://openai.com/blog/image-gpt/</a>
-<a href="https://openai.com/blog/dall-e/">https://openai.com/blog/dall-e/</a></p>
+<p><img src="https://prototypr.gumlet.io/wp-content/uploads/2020/07/2020-07-22-14-39-08.2020-07-22-14_40_46.gif?format=webp&amp;w=2400" alt=""></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="text-summarization">text summarization<a class="anchor-link" href="#text-summarization">&#182;</a></h3><p><img src="https://konfuzio.com/wp-content/uploads/2021/02/summarize_annual_report.gif" alt=""></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="img+nlp">img+nlp<a class="anchor-link" href="#img+nlp">&#182;</a></h1><p><img src='8.png' width=600/></p>
 
 </div>
 </div></section></section><section><section>
@@ -15727,42 +15939,53 @@ prediction -&gt;  9
 <p><code>input: 'deep learning'</code></p>
 <p><img src="video.gif" alt=""></p>
 
-<pre><code>                                                                                ~vqgan+clip
-
-</code></pre>
-<p><a href="https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN%2BCLIP_%28z%2Bquantize_method_with_augmentations%2C_user_friendly_interface%29.ipynb">https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN%2BCLIP_%28z%2Bquantize_method_with_augmentations%2C_user_friendly_interface%29.ipynb</a></p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>input: blind men in a rollercoaster</code></p>
-<p><a href="https://filebin.net/57darj1sj0j2b02q/babis2.mp4">link</a></p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>input: a clown in a bicycle getting hit by a truck on a stormy night</code></p>
-<p><img src="10.png" alt=""></p>
-
 <pre><code>                                                                                ~vqgan+clip</code></pre>
 
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="superesolucion-y-superfluidez">superesolucion y superfluidez<a class="anchor-link" href="#superesolucion-y-superfluidez">&#182;</a></h2><p><img src="https://github.com/thunil/TecoGAN/raw/master/resources/tecoGAN-spider.gif" alt=""></p>
-<p><a href="https://www.youtube.com/watch?v=Fxd8XJ_J0Gc">https://www.youtube.com/watch?v=Fxd8XJ_J0Gc</a></p>
+</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;VNrmG4EvFs8&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">405</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+
+        <iframe
+            width="720"
+            height="405"
+            src="https://www.youtube.com/embed/VNrmG4EvFs8"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
 
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="yolo-(you-only-look-once)">yolo (you only look once)<a class="anchor-link" href="#yolo-(you-only-look-once)">&#182;</a></h2><p><img src="https://pythonawesome.com/content/images/2021/07/track_all.gif" alt=""></p>
-<p><a href="https://colab.research.google.com/github/aissam-out/YOLO/blob/master/YOLO_ImageAI_video.ipynb#scrollTo=tXvkvSC8eij8">https://colab.research.google.com/github/aissam-out/YOLO/blob/master/YOLO_ImageAI_video.ipynb#scrollTo=tXvkvSC8eij8</a></p>
 
 </div>
+
+</div>
+
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15785,7 +16008,6 @@ prediction -&gt;  9
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="https://www.researchgate.net/profile/Akos-Kungl-2/publication/342097480/figure/fig4/AS:901194046271488@1591872812012/Problem-setup-in-reinforcement-learning-A-The-two-main-components-of-reinforcement.png" alt=""></p>
-<p><a href="https://colab.research.google.com/drive/1YZY9HdB9BkCtJQ4Xm6w4Uxmd-HLOEUJq">colab</a></p>
 
 </div>
 </div></section></section><section><section>
@@ -15799,6 +16021,43 @@ prediction -&gt;  9
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a href="https://www.youtube.com/watch?v=hx_bgoTF7bs">https://www.youtube.com/watch?v=hx_bgoTF7bs</a></p>
 <p><a href="https://www.youtube.com/watch?v=jjfDO2pWpys&amp;t=378s">https://www.youtube.com/watch?v=jjfDO2pWpys&amp;t=378s</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Links">Links<a class="anchor-link" href="#Links">&#182;</a></h1><hr>
+<h2 id="nlp">nlp<a class="anchor-link" href="#nlp">&#182;</a></h2><p><a href="https://arxiv.org/abs/1706.03762">Transformers! Attention Is All You Need</a></p>
+<p><a href="https://jalammar.github.io/illustrated-gpt2/">GPT-2 ilustrado</a></p>
+<p><a href="http://nlpprogress.com/">http://nlpprogress.com/</a></p>
+<p><a href="https://huggingface.co/models">https://huggingface.co/models</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Links">Links<a class="anchor-link" href="#Links">&#182;</a></h1><hr>
+<h2 id="nlp+cv">nlp+cv<a class="anchor-link" href="#nlp+cv">&#182;</a></h2><p><a href="https://openai.com/blog/image-gpt/">https://openai.com/blog/image-gpt/</a></p>
+<p><a href="https://openai.com/blog/dall-e/">https://openai.com/blog/dall-e/</a></p>
+<p><a href="https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN%2BCLIP_%28z%2Bquantize_method_with_augmentations%2C_user_friendly_interface%29.ipynb">vqgan+clip colab</a></p>
+<h2 id="reinforcement-learning">reinforcement learning<a class="anchor-link" href="#reinforcement-learning">&#182;</a></h2><p><a href="https://colab.research.google.com/drive/1YZY9HdB9BkCtJQ4Xm6w4Uxmd-HLOEUJq">intro colab</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Links">Links<a class="anchor-link" href="#Links">&#182;</a></h1><hr>
+<h2 id="cursos">cursos<a class="anchor-link" href="#cursos">&#182;</a></h2><p><a href="http://introtodeeplearning.com/2021/index.html">mit</a></p>
+<h2 id="libros">libros<a class="anchor-link" href="#libros">&#182;</a></h2><p><a href="https://www.deeplearningbook.org">goodfellow/bengio</a></p>
+<h2 id="youtubes">youtubes<a class="anchor-link" href="#youtubes">&#182;</a></h2><p><a href="https://www.youtube.com/c/DotCSV">dotcsv</a></p>
+<p><a href="https://www.youtube.com/c/KárolyZsolnai">2minpapers</a></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Links">Links<a class="anchor-link" href="#Links">&#182;</a></h1><hr>
+<h2 id="papers+code">papers+code<a class="anchor-link" href="#papers+code">&#182;</a></h2><p><a href="https://paperswithcode.com">paperswithcode</a></p>
 
 </div>
 </div></section></section>
